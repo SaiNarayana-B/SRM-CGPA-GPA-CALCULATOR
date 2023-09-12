@@ -124,6 +124,7 @@ footer {
     bottom: 0;
     height: 130px; /* Adjust the height as needed */
     backdrop-filter: blur(5px);
+    z-index : -1;
 }
 
 
