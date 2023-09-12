@@ -36,6 +36,9 @@ body {
 .container:hover {
     transform: scale(1.02);
 }
+#subjectsContainer{
+  transform: none;
+}
 
 .container, select, option, input, button {
     font-weight: bold;
