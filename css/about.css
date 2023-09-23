@@ -124,7 +124,7 @@ footer {
     bottom: 0;
     height: 130px; /* Adjust the height as needed */
     backdrop-filter: blur(5px);
-    z-index : -1;
+    /* z-index : 0; */
 }
 
 
@@ -225,6 +225,7 @@ nav{
   align-items: center;
   background: #fff;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  z-index:1;
 }
 nav .logo {
   display: flex;
@@ -382,8 +383,23 @@ nav.open ~ .overlay {
     }
     .social-menu ul li a{
         margin:5px;
+        color: #0057ff;
     }
     body {
         margin: 0;
     }
+    footer .social-menu ul li:nth-child(1) a{
+        background-color:  #171515;
+    }
+    footer .social-menu ul li:nth-child(2) a{
+        background-color: #0072b1;
+    }
+    footer .social-menu ul li .fab{
+        font-size: 25px;
+        line-height: 40px;
+        transition: .3s;
+        color: #fff;
+    }
+      
+    
 }
