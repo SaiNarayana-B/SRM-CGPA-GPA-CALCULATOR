@@ -55,7 +55,8 @@ body {
 /* Hero Section Styles */
 .hero {
     background-image: url("images/mbg.webp");
-    background-size: 100% 100%;
+    background-size: cover; /* Use "cover" to make the image cover the entire element */
+    background-position: center center; /* Center the image horizontally and vertically */
     background-repeat: no-repeat;
     padding: 120px 0;
     text-align: center;
@@ -63,6 +64,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
+
 
 .hero h2 {
     font-size: 48px;
