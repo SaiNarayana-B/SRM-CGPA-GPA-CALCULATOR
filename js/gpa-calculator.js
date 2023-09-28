@@ -2373,6 +2373,7 @@ function goToSubjectsPage() {
     localStorage.setItem("selectedSemester", semester);
 
     window.location.href = "subjects.html";
+    Android.loadSubjectsPage();
 }
 
 function populateSubjects() {
