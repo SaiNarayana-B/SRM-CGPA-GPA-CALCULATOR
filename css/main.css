@@ -55,8 +55,7 @@ body {
 /* Hero Section Styles */
 .hero {
     background-image: url("https://i.postimg.cc/CMBLyxsk/mbg.webp");
-    background-size: cover; 
-    background-position: center center; 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 120px 0;
     text-align: center;
