@@ -2373,7 +2373,6 @@ function goToSubjectsPage() {
     localStorage.setItem("selectedSemester", semester);
 
     window.location.href = "subjects.html";
-    Android.loadSubjectsPage();
 }
 
 function populateSubjects() {
@@ -2386,7 +2385,12 @@ function populateSubjects() {
 
     subjects.forEach(subjectObj => {
         let label = document.createElement("label");
-        label.textContent = subjectObj.subject;
+  
+        label.textContent = subjectObj.subject+" ("+subjectObj.credit+")";
+        
+        
+        
+        
 
         let select = document.createElement("select");
         for (let grade in grades) {
@@ -2418,7 +2422,9 @@ function calculateGPA() {
     });
     
     let gpa = totalGradePoints / totalCredits;
-    document.getElementById("result").innerText = `Your GPA is: ${gpa.toFixed(3)}`;
+    let ele = document.getElementById("result")
+    ele.innerHTML = `<span>Your GPA:</span> ${gpa.toFixed(3)}`;
+    ele.scrollIntoView();
 }
 
 
@@ -2432,5 +2438,3 @@ if (window.location.pathname.includes("gpa-calculator")) {
 if (window.location.pathname.includes("subjects.html")) {
     populateSubjects();
 }
-
-
