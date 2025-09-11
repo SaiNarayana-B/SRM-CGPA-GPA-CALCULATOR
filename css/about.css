@@ -1,3 +1,19 @@
+nav #terms:hover{
+    transition: transform .5s ease;
+    background-color: #6c63ff;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+nav #privacy:hover{
+    transition: transform .5s ease;
+    background-color: #ff6584;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
 body {
     margin: 0;
     font-family:'Times New Roman', Times, serif;
