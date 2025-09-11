@@ -517,3 +517,19 @@ h3,h2{
         padding: 15px 0;
     }
 }
+nav #terms:hover{
+    transition: transform .5s ease;
+    background-color: #6c63ff;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
+nav #privacy:hover{
+    transition: transform .5s ease;
+    background-color: #ff6584;
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+}
